@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Messaging App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .pass { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Messaging App Test</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Open Main App</h2>
+        <p>Click the button below to open the messaging app:</p>
+        <button onclick="window.open('index.html', '_blank')">Open Messaging App</button>
+        <p class="pass">✓ Main application should open in a new tab</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Verify Features</h2>
+        <p>In the messaging app, verify these features work:</p>
+        <ol>
+            <li>Type a message in the chatbox</li>
+            <li>Click Send button - message should appear</li>
+            <li>Status bar should show "Processing replies..."</li>
+            <li>5 automated replies should appear (2 seconds apart)</li>
+            <li>Status bar should return to "Ready" when done</li>
+            <li>Try pressing Enter to send a message</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Responsive Design</h2>
+        <p>Resize the browser window or open on mobile:</p>
+        <ul>
+            <li>App should adapt to different screen sizes</li>
+            <li>On mobile, app should fill the screen</li>
+            <li>All elements should remain accessible</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>Expected Behavior</h2>
+        <ul>
+            <li>✓ User messages appear instantly when sent</li>
+            <li>✓ Status bar updates during processing</li>
+            <li>✓ 5 replies appear with 2-second delays</li>
+            <li>✓ Empty messages are not sent</li>
+            <li>✓ Enter key works as alternative to Send button</li>
+            <li>✓ Visual feedback on hover and focus</li>
+            <li>✓ Smooth animations for all transitions</li>
+        </ul>
+    </div>
+    
+    <script>
+        console.log('Test page loaded');
+        console.log('All tests are manual - open the app and verify functionality');
+    </script>
+</body>
+</html>

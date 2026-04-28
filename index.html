@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging App Mockup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="avatar">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="user-info">
+                    <h2>FinFactCheck</h2>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Area -->
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Initial welcome message -->
+                <div class="message received">
+                    <div class="message-content">
+                        <p>Welcome to FinFactCheck! Type a message or insert a social media link and click Send to fact check financial advices!</p>
+                    </div>
+                    <div class="message-time">10:00 AM</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar" id="statusBar">
+            <div class="status-content">
+                <i class="fas fa-circle status-icon"></i>
+                <span class="status-text">Ready</span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-container">
+                <!-- <button class="input-btn"><i class="fas fa-plus"></i></button> -->
+                <input type="text" id="messageInput" value="https://youtube.com/shorts/DX9LU2ogKgQ" autocomplete="off">
+                <!-- <button class="input-btn"><i class="fas fa-smile"></i></button> -->
+                <button class="input-btn" id="sendButton">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="input-footer">
+                <p>Press Enter to send or click the Send button</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
