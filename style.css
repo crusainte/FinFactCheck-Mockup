@@ -18,12 +18,12 @@ body {
 /* App Container */
 .app-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 1000px;
     background: white;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    height: 700px;
+    height: 900px;
     display: flex;
     flex-direction: column;
 }
